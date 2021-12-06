@@ -1,5 +1,6 @@
 import asyncio
 import discord
+from discord import FFmpegPCMAudio
 from apikeys import *
 
 #attacks the target with the hype audio.
