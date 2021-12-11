@@ -17,6 +17,7 @@ client = commands.Bot(command_prefix = '%', intents=intents)
 @client.event
 async def on_ready():
     print("{0.user} IS ONLINE." .format(client))
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="%commands"))
 
 
 #%HypeBot prints a hype line.
@@ -50,6 +51,19 @@ async def raid(ctx):
         await ctx.channel.send('`You have to be in a voice channel to use this command.`')
     else:
         await attackTarget(ctx.author, client)
+
+#% will drop an embedded list of commands for users to view.
+@client.command()
+async def commands(ctx):
+    embed = discord.Embed(title="LIST OF COMMANDS FOR HYPE BOT.",
+                              description="What commands can the hype bot do?",
+                              color=discord.Color.blue())
+    embed.add_field(name="%HypeBot", value="Shows who the hype bot target is.", inline=False)
+    embed.add_field(name="%raid", value="Sends the hype bot to whatever voice channel you are in, not matter the targetID.",
+                        inline=False)
+    embed.add_field(name="%join", value="Hype bot joins whatever voice channel you are in.", inline=False)
+    embed.add_field(name="%leave", value="Hype bot leaves the voice channel.", inline=False)
+    await ctx.send(embed=embed)
 
 #When the targetID joins a voice channel, the bot will follow and play the audio_source file.
 #Does a quick check to see if the member that joined is the targetID, if yes then go in and play, else print "not target".
