@@ -1,4 +1,4 @@
-# discordHypeManBot
+# discordHypeManBot API
 
 -- HOW TO SET UP? --  
  Create a discord bot in discord developer portal and connect to the server.  
