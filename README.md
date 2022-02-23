@@ -44,7 +44,7 @@ git clone https://github.com/Nathanrowe32/Discord-Bot-API.git
 !commands()
 ```
 
-<h2> # Additional notes <h2>
+<h2> # Additional notes </h2>
 Feel free to pull and play around, I really made this because it was fun experimenting with discord bot functionality.
 Also shake some rust off the Python skills.
 
