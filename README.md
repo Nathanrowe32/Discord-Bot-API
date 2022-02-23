@@ -1,6 +1,6 @@
 # discordHypeManBot API
 
-<h2> -- HOW TO SET UP? --  <h2>
+<h2> -- HOW TO SET UP? --  </h2>
  Create a discord bot in discord developer portal and connect to the server.  
  Load the discord bot token into apikeys.py.  
  Set a targetID (discord username) that you want to get hyped up.  
