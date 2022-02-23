@@ -41,7 +41,8 @@ git clone https://github.com/Nathanrowe32/Discord-Bot-API.git
 # list of commands will display in caller's chat.
 !commands()
 
-!
+# when targetID joins a voice channel, bot will follow suit and play audio_source_file mp3 in call.
+!on_voice_state_update()
 ```
 
 <h2> # Additional notes </h2>
