@@ -1,5 +1,3 @@
-# discordHypeManBot API
-
 <h1> # Discord Hype Man Bot </h1>
 
 Assign the Hype Man Bot a discordID# that hypes up the call that he joins.
@@ -42,6 +40,8 @@ git clone https://github.com/Nathanrowe32/Discord-Bot-API.git
 
 # list of commands will display in caller's chat.
 !commands()
+
+!
 ```
 
 <h2> # Additional notes </h2>
